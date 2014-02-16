@@ -7626,7 +7626,19 @@ i {
   font-weight: 200;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
+section {
+  padding: 2em 0 4em 0;
+  position: relative;
+}
+/* line 34, ../sass/screen.scss */
+section h2 {
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 42, ../sass/screen.scss */
 header {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -7634,56 +7646,90 @@ header {
   height: 60px;
   width: 100%;
 }
-/* line 39, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 header ul {
   list-style: none;
   padding-top: 18px;
 }
-/* line 45, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 header li {
   float: left;
   margin-left: 2em;
 }
-/* line 49, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 header a {
   color: white;
   text-transform: uppercase;
 }
-/* line 52, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 header a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 54, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 header h1 {
   color: rgba(255, 255, 255, 0.2);
   font-weight: 900;
 }
-/* line 60, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 header h1 span {
   font-weight: 100;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .content {
   padding-top: 60px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .hero {
-  background: #09b39c;
+  background: #a2ccb4;
 }
-/* line 74, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .hero h1 {
   font-size: 90px;
 }
-/* line 76, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .hero h1 span {
   font-weight: 500;
 }
-/* line 80, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .hero h3 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+/* line 94, ../sass/screen.scss */
+.hero:after {
+  left: 4%;
+  margin-left: 30px;
+  left: auto;
+  bottom: -30px;
+  content: '';
+  position: absolute;
+  border-top: 30px #a2ccb4 solid;
+  border-left: transparent 30px solid;
+  border-right: transparent 30px solid;
+  z-index: 2;
+}
+
+/* line 111, ../sass/screen.scss */
+.section.color1 {
+  background: #09b39c;
+}
+/* line 114, ../sass/screen.scss */
+.section.color1 h1, .section.color1 h2, .section.color1 h3 {
+  color: white;
+}
+/* line 118, ../sass/screen.scss */
+.section.color1:after {
+  right: 4%;
+  left: auto;
+  bottom: -30px;
+  content: '';
+  position: absolute;
+  border-top: 30px #09b39c solid;
+  border-left: transparent 30px solid;
+  border-right: transparent 30px solid;
+  z-index: 2;
 }
